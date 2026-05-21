@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Cobertura da Copa do Mundo 2026, cidades-sede, seleções favoritas e experiência esportiva."/>
+  <title>Esportes & Copa 2026 — NovaTechNews</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="bg-app text-main">
+
+<header class="topbar sticky top-0 z-50 backdrop-blur-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 gap-4">
+      <a href="index.html" class="logo text-2xl font-black tracking-tight text-main" aria-label="NovaTechNews — Página inicial">
+        NovaTech<span class="accent">News</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7" aria-label="Navegação principal">
+        <a href="index.html" class="nav-link  font-semibold text-sm uppercase tracking-wide">Início</a>
+        <a href="tecnologia.html" class="nav-link  font-semibold text-sm uppercase tracking-wide">Tecnologia</a>
+        <a href="esportes.html" class="nav-link active font-semibold text-sm uppercase tracking-wide">Esportes</a>
+        <a href="noticia.html" class="nav-link  font-semibold text-sm uppercase tracking-wide">Artigo</a>
+        <a href="sobre.html" class="nav-link  font-semibold text-sm uppercase tracking-wide">Sobre</a>
+        <a href="contato.html" class="nav-link  font-semibold text-sm uppercase tracking-wide">Contato</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-3 flex-1 max-w-xs xl:max-w-sm">
+        <form data-search-form class="w-full">
+          <div class="relative">
+            <input type="search" placeholder="Buscar notícias..." class="search-input w-full rounded-xl pl-10 pr-3 py-2.5 text-sm" aria-label="Buscar notícias"/>
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-muted">🔎</span>
+          </div>
+        </form>
+      </div>
+
+      <div class="hidden md:flex items-center gap-3">
+        <time data-current-date class="text-xs text-muted font-medium"></time>
+        <button data-theme-toggle class="search-input rounded-xl px-3 py-2 text-sm font-semibold" aria-label="Alternar tema"></button>
+      </div>
+
+      <button id="menuBtn" class="lg:hidden search-input rounded-xl px-3 py-2 text-sm font-semibold" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        ☰
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="hidden lg:hidden surface border-t border-soft px-4 pb-4 pt-2 space-y-2" role="navigation" aria-label="Navegação mobile">
+    <a href="index.html" class="block py-2 px-3 rounded-lg text-muted hover:bg-white/5 hover:text-main font-semibold text-sm uppercase tracking-wide">Início</a>
+    <a href="tecnologia.html" class="block py-2 px-3 rounded-lg text-muted hover:bg-white/5 hover:text-main font-semibold text-sm uppercase tracking-wide">Tecnologia</a>
+    <a href="esportes.html" class="block py-2 px-3 rounded-lg text-main bg-white/5 border border-soft font-semibold text-sm uppercase tracking-wide">Esportes</a>
+    <a href="noticia.html" class="block py-2 px-3 rounded-lg text-muted hover:bg-white/5 hover:text-main font-semibold text-sm uppercase tracking-wide">Artigo</a>
+    <a href="sobre.html" class="block py-2 px-3 rounded-lg text-muted hover:bg-white/5 hover:text-main font-semibold text-sm uppercase tracking-wide">Sobre</a>
+    <a href="contato.html" class="block py-2 px-3 rounded-lg text-muted hover:bg-white/5 hover:text-main font-semibold text-sm uppercase tracking-wide">Contato</a>
+    <div class="pt-2">
+      <form data-search-form>
+        <div class="relative">
+          <input type="search" placeholder="Buscar notícias..." class="search-input w-full rounded-xl pl-10 pr-3 py-2.5 text-sm" aria-label="Buscar notícias no mobile"/>
+          <span class="absolute left-3 top-1/2 -translate-y-1/2 text-muted">🔎</span>
+        </div>
+      </form>
+      <button data-theme-toggle class="search-input rounded-xl px-3 py-2 text-sm font-semibold mt-3 w-full"></button>
+    </div>
+  </div>
+</header>
+
+<section class="py-12 bg-gradient-to-r from-slate-950 via-emerald-950 to-slate-900 border-b border-soft">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="flex items-center gap-2 text-sm text-muted mb-4">
+      <a href="index.html" class="hover-accent">Início</a><span>/</span><span class="text-main font-semibold">Esportes</span>
+    </nav>
+    <h1 class="text-4xl md:text-5xl font-black gradient-title mb-3">Esportes & Copa 2026</h1>
+    <p class="text-lg text-slate-300 max-w-2xl">Cobertura sobre cidades-sede, favoritos, bastidores, dados e experiências digitais em torno do maior evento do futebol mundial.</p>
+  </div>
+</section>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <article class="news-card rounded-3xl overflow-hidden mb-12 md:grid md:grid-cols-5" data-article-card data-search="copa 2026 esportes destaque principal">
+    <a href="noticia.html" class="card-image-wrap md:col-span-2 block"><img src="assets/images/card-sports.webp" alt="Estádio esportivo em noite de jogo" class="w-full h-full min-h-[320px] object-cover"></a>
+    <div class="p-6 md:p-8 md:col-span-3 flex flex-col justify-center">
+      <span class="badge badge-green mb-4">✦ Especial Copa</span>
+      <h2 class="text-3xl font-black mb-3"><a href="noticia.html" class="hover-accent">Copa 2026 amplia espetáculo esportivo com experiência distribuída em três países</a></h2>
+      <p class="text-muted mb-4 max-w-3xl">O torneio se torna também um produto midiático de alta escala, com novas formas de cobertura, dashboards, conteúdo em tempo real e experiências híbridas para torcedores.</p>
+      <div class="flex items-center gap-3 text-xs text-muted mb-6"><span>18 abr 2026</span><span>•</span><span>7 min de leitura</span><span>•</span><span>Redação NovaTech</span></div>
+      <a href="noticia.html" class="bg-accent text-white font-bold px-5 py-3 rounded-xl self-start hover:opacity-90 transition">Ler análise completa</a>
+    </div>
+  </article>
+
+  <section class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+    <div class="lg:col-span-8">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="section-title text-2xl font-black">Cobertura esportiva</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <article class="news-card rounded-2xl" data-article-card data-search="favoritos brasil frança espanha copa">
+          <a href="noticia.html" class="card-image-wrap block"><img src="assets/images/card-breaking.webp" alt="Breaking news esportivo" class="w-full h-52 object-cover"></a>
+          <div class="p-5"><span class="badge badge-green">Favoritas</span><h3 class="mt-3 text-xl font-black"><a href="noticia.html" class="hover-accent">Brasil, França e Espanha chegam fortes ao ciclo final de preparação</a></h3><p class="text-muted mt-2 line-clamp-3">Seleções usam dados, análise de desempenho e tecnologia para ajustar elenco, condicionamento e tomada de decisão.</p><div class="mt-4 text-xs text-muted flex justify-between"><span>17 abr 2026</span><span>5 min</span></div></div>
+        </article>
+        <article class="news-card rounded-2xl" data-article-card data-search="cidade sede turismo estádios">
+          <a href="noticia.html" class="card-image-wrap block"><img src="assets/images/card-newsroom.webp" alt="Cobertura de bastidores e mídia" class="w-full h-52 object-cover"></a>
+          <div class="p-5"><span class="badge badge-blue">Bastidores</span><h3 class="mt-3 text-xl font-black"><a href="noticia.html" class="hover-accent">Cidades-sede se preparam para o fluxo de torcedores e mídia internacional</a></h3><p class="text-muted mt-2 line-clamp-3">Infraestrutura, mobilidade, segurança e turismo entram na pauta como parte central da cobertura editorial da Copa.</p><div class="mt-4 text-xs text-muted flex justify-between"><span>17 abr 2026</span><span>4 min</span></div></div>
+        </article>
+        <article class="news-card rounded-2xl" data-article-card data-search="torcida estádio experiência esportiva">
+          <a href="noticia.html" class="card-image-wrap block"><img src="assets/images/card-sports.webp" alt="Ambiente de estádio" class="w-full h-52 object-cover"></a>
+          <div class="p-5"><span class="badge badge-green">Torcida</span><h3 class="mt-3 text-xl font-black"><a href="noticia.html" class="hover-accent">Experiência do torcedor se expande para além do estádio e das transmissões</a></h3><p class="text-muted mt-2 line-clamp-3">Aplicativos, dashboards e conteúdo móvel ajudam a construir vínculos entre evento, cidade e consumo de notícia.</p><div class="mt-4 text-xs text-muted flex justify-between"><span>16 abr 2026</span><span>3 min</span></div></div>
+        </article>
+        <article class="news-card rounded-2xl" data-article-card data-search="streaming documentário esporte entretenimento">
+          <a href="noticia.html" class="card-image-wrap block"><img src="assets/images/card-entertainment.webp" alt="Cobertura cultural do esporte" class="w-full h-52 object-cover"></a>
+          <div class="p-5"><span class="badge badge-orange">Narrativas</span><h3 class="mt-3 text-xl font-black"><a href="noticia.html" class="hover-accent">Documentários e formatos curtos ampliam o interesse no futebol global</a></h3><p class="text-muted mt-2 line-clamp-3">A interseção entre entretenimento e esporte fortalece séries, bastidores e perfis de atletas como produto editorial de alto apelo.</p><div class="mt-4 text-xs text-muted flex justify-between"><span>15 abr 2026</span><span>4 min</span></div></div>
+        </article>
+      </div>
+
+      <div class="panel rounded-3xl p-6 md:p-8 mt-12">
+        <span class="badge badge-green mb-4">▶ Vídeo em destaque</span>
+        <h3 class="text-2xl font-black mb-2">Copa 2026: o que esperar da nova escala do torneio</h3>
+        <div class="video-wrapper mt-4">
+          <iframe src="https://www.youtube.com/embed/kPnEqCQ_bIQ" title="Vídeo sobre Copa 2026" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <aside class="lg:col-span-4 space-y-6">
+      <div class="panel rounded-2xl p-5">
+        <h3 class="font-black text-lg mb-4">Números da Copa</h3>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="surface-2 rounded-xl p-4 text-center"><div class="text-3xl font-black accent">48</div><div class="text-xs text-muted mt-1">seleções</div></div>
+          <div class="surface-2 rounded-xl p-4 text-center"><div class="text-3xl font-black accent">3</div><div class="text-xs text-muted mt-1">países-sede</div></div>
+          <div class="surface-2 rounded-xl p-4 text-center"><div class="text-3xl font-black accent">16</div><div class="text-xs text-muted mt-1">cidades</div></div>
+          <div class="surface-2 rounded-xl p-4 text-center"><div class="text-3xl font-black accent">104</div><div class="text-xs text-muted mt-1">partidas</div></div>
+        </div>
+      </div>
+      <div class="panel rounded-2xl p-5">
+        <h3 class="font-black text-lg mb-4">Seleções em destaque</h3>
+        <ul class="space-y-3 text-sm">
+          <li class="flex justify-between"><span>🇧🇷 Brasil</span><span class="badge badge-green">Favorita</span></li>
+          <li class="flex justify-between"><span>🇫🇷 França</span><span class="badge badge-green">Favorita</span></li>
+          <li class="flex justify-between"><span>🇦🇷 Argentina</span><span class="badge badge-blue">Atual campeã</span></li>
+          <li class="flex justify-between"><span>🇪🇸 Espanha</span><span class="badge badge-green">Favorita</span></li>
+        </ul>
+      </div>
+      <div class="panel rounded-2xl overflow-hidden">
+        <img src="assets/images/card-sports.webp" alt="Imagem de estádio" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <span class="badge badge-green mb-3">Rota do torneio</span>
+          <h3 class="text-xl font-black mb-2">Da experiência esportiva à experiência de navegação</h3>
+          <p class="text-sm text-muted">O layout desta página foi pensado para destacar números, chamadas principais e leitura rápida em contexto de notícia esportiva.</p>
+        </div>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<footer class="site-footer mt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+      <div class="md:col-span-2">
+        <div class="logo text-2xl font-black text-main mb-3">NovaTech<span class="accent">News</span></div>
+        <p class="text-sm text-muted max-w-md leading-relaxed">Portal com estética editorial moderna, cobrindo tecnologia, games, esportes, entretenimento e inteligência artificial com foco em boa leitura, hierarquia visual e experiência do usuário.</p>
+        <div class="flex gap-3 mt-5 flex-wrap">
+          <a href="#" class="footer-link text-sm">Instagram</a>
+          <a href="#" class="footer-link text-sm">YouTube</a>
+          <a href="#" class="footer-link text-sm">X / Twitter</a>
+          <a href="#" class="footer-link text-sm">TikTok</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold text-main text-sm uppercase tracking-wide mb-4">Seções</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="footer-link">Página inicial</a></li>
+          <li><a href="tecnologia.html" class="footer-link">Tecnologia</a></li>
+          <li><a href="esportes.html" class="footer-link">Esportes</a></li>
+          <li><a href="noticia.html" class="footer-link">Detalhe da notícia</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-main text-sm uppercase tracking-wide mb-4">Contato</h4>
+        <ul class="space-y-2 text-sm text-muted">
+          <li>📧 redacao@novatechnews.com.br</li>
+          <li>📍 Joinville, SC — Brasil</li>
+          <li><a href="contato.html" class="footer-link">Fale conosco</a></li>
+          <li><a href="sobre.html" class="footer-link">Sobre o portal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-soft pt-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-muted">
+      <p>© <span data-footer-year></span> NovaTechNews. Todos os direitos reservados.</p>
+      <p>HTML5 + TailwindCSS + JavaScript • Projeto acadêmico de IHC</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
